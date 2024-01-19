@@ -13,7 +13,6 @@ const EventList = () => {
     ];
 
     return (
-
             <ItemContainer>
                 <ItemContents>
                     {eventArr.map((event)=>{
@@ -22,7 +21,6 @@ const EventList = () => {
 
                 </ItemContents>
             </ItemContainer>
-
     );
 }
 export default EventList;
