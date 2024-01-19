@@ -63,10 +63,11 @@ const Nav = styled.nav`
     bottom: 0;
     left: 0;
     right: 0;
+    max-width: 430px;
+    margin-left: auto;
+    margin-right: auto;
     height: 11.019vh;
     background-color: #fff;
     box-shadow: 0px -1px 5px 0px rgba(131, 131, 131, 0.25);
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
+ 
 `

@@ -13,7 +13,6 @@ const EventList = () => {
 
     return (
         <div>
-            <h2>이벤트 리스트</h2>
             {eventArr.map((event)=>{
                 return <EventItem id={event.id} name={event.text}/>
             })}

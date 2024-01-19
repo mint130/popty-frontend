@@ -32,6 +32,8 @@ const Input = styled.input`
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    margin-left: 10px;
+    
     &::placeholder{
         color: #C6C6C6
     `
