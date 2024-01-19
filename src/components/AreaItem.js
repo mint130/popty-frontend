@@ -17,7 +17,7 @@ const Title = styled.div`
     color: white;
 `
 const Rect = styled.div`
-margin-bottom: 12px;
+    margin-bottom: 12px;
     width: 140px;
     height: 40px;
     padding: 5px;

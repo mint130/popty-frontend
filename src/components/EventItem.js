@@ -1,12 +1,20 @@
 import * as icons from '../assets/svg'
-const EventComponent = icons['eventRect'];
+import styled from 'styled-components';
+import EventComponent from "../assets/svg/event";
 
 const EventItem = ({id, name}) => {
 
     return (
-        <EventComponent id={id} name={name}/>
+        <ItemWrapper>
+            <EventComponent id={id} name={name}/>
+        </ItemWrapper>
+
+
 
 
     );
 }
 export default EventItem;
+const ItemWrapper = styled.div`
+    padding-right: 14px;
+`

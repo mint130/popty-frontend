@@ -7,4 +7,3 @@ export {ReactComponent as lineReserve} from './reserve-line.svg';
 export {ReactComponent as fillSetting} from './setting-fill.svg';
 export {ReactComponent as lineSetting} from './setting-line.svg';
 export {ReactComponent as lineBoard} from './board-line.svg';
-export {ReactComponent as eventRect} from './event.svg';

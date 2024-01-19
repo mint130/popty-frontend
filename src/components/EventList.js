@@ -1,4 +1,5 @@
 import EventItem from "./EventItem";
+import styled from "styled-components";
 import {useState} from "react";
 
 const EventList = () => {
@@ -12,11 +13,28 @@ const EventList = () => {
     ];
 
     return (
-        <div>
-            {eventArr.map((event)=>{
-                return <EventItem id={event.id} name={event.text}/>
-            })}
-        </div>
+
+            <ItemContainer>
+                <ItemContents>
+                    {eventArr.map((event)=>{
+                        return <EventItem id={event.id} name={event.text}/>
+                    })}
+
+                </ItemContents>
+            </ItemContainer>
+
     );
 }
 export default EventList;
+
+const ItemContainer=styled.div`
+   overflow-x: auto;    
+   &::-webkit-scrollbar {
+        display: none;
+   }
+`
+const ItemContents=styled.div`
+   min-width: 800px;
+   width: 100%;
+   display: flex;
+`
