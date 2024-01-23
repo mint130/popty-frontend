@@ -66,7 +66,7 @@ const Nav = styled.nav`
     max-width: 430px;
     margin-left: auto;
     margin-right: auto;
-    height: 11.019vh;
+    height: 90px;
     background-color: #fff;
     box-shadow: 0px -1px 5px 0px rgba(131, 131, 131, 0.25);
  

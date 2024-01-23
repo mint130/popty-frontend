@@ -1,6 +1,6 @@
-import * as icons from '../assets/svg'
+import * as icons from '../../assets/svg'
 import styled from 'styled-components';
-import EventComponent from "../assets/svg/event";
+import EventComponent from "../../assets/svg/event";
 
 const EventItem = ({id, name}) => {
 
@@ -16,5 +16,5 @@ const EventItem = ({id, name}) => {
 }
 export default EventItem;
 const ItemWrapper = styled.div`
-    padding-right: 14px;
+    padding-right: 8px;
 `

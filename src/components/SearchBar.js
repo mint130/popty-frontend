@@ -19,10 +19,12 @@ const Bar = styled.div`
     display: flex;
     width: 79.827vw;
     height: 5vh;
+    //height: 42.66px;
     border-radius: 10px;
     background: #F5F5F5;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+   
 `
 const Input = styled.input`
     outline: none;

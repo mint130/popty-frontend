@@ -1,8 +1,9 @@
-import EventItem from "./EventItem";
+import EventItem from "../item/EventItem";
 import styled from "styled-components";
 import {useState} from "react";
 
 const EventList = () => {
+
     const eventArr =[
         {id: 0, text: "카페"},
         {id: 1, text: "음식점"},
@@ -32,7 +33,8 @@ const ItemContainer=styled.div`
    }
 `
 const ItemContents=styled.div`
-   min-width: 800px;
+   min-width: fit-content;
    width: 100%;
    display: flex;
+   margin-right: 6px;
 `

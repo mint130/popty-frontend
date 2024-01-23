@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Reservation from "./pages/Reservation";
 import Board from "./pages/Board";
 import Setting from "./pages/Setting";
+import EventPlaceList from "./pages/EventPlaceList";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/reservation" element={<Reservation/>}></Route>
             <Route path="/board" element={<Board/>}></Route>
             <Route path="/setting" element={<Setting/>}></Route>
+            <Route path="/list" element={<EventPlaceList/>}></Route>
         </Routes>
         <Navbar />
 
