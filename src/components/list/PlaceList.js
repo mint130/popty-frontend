@@ -43,14 +43,16 @@ const ItemTable=styled.div`
     
 `
 const ItemContainer=styled.div`
-    padding:10px;
+     width: 95%;
+    margin-left: auto;
+    margin-right: auto;
   
     
 `
 const ItemWrapper=styled.div`
     display: flex;
     justify-content: center;
-    padding-bottom: 10px;
+    padding-bottom: 8%;
 `
 const RowItemWrapper=styled.div`
     padding-right: 12px;

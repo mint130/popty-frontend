@@ -49,11 +49,13 @@ const Title = styled.div`
     font-weight: 600;
 `
 const Item=styled.div`
-    width: ${(props) => props.page==="home"? "156px" : "180px"};
+    width: ${(props) => props.page==="home"? "156px" : "100%"};
 `
 const Rect = styled.div`
-    width: ${(props) => props.page==="home"? "156px" : "180px"};
-    height: ${(props) => props.page==="home"? "156px" : "180px"};
+    //부모의 width와 똑같이 받는 방법?
+    width: ${(props) => props.page==="home"? "156px" : "100%"};
+
+    aspect-ratio: 1 / 1; /* 가로 세로 비율을 1:1로 설정 (원하는 비율로 변경 가능) */
     
     border-radius: 13px;
     background: #CBCBCB;
