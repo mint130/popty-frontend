@@ -9,6 +9,7 @@ const LineHome = icons['lineHome'];
 const FillReserve = icons['fillReserve'];
 const LineReserve = icons['lineReserve'];
 const LineBoard = icons['lineBoard'];
+const FillBoard = icons['fillBoard'];
 
 const Navbar = () => {
     const [select, setSelect] =useState(1);
@@ -34,13 +35,17 @@ const Navbar = () => {
                     }
                 </Link>
             </IconDiv>
-            <IconDiv>
+            <IconDiv onClick={()=>handleClick(3)}>
                 <Link to={'/board'}>
-                    <LineBoard/></Link>
+                    {select === 3 ?
+                        (<FillBoard/>) :
+                        (<LineBoard/>)
+                    }
+                </Link>
             </IconDiv>
-            <IconDiv onClick={() => handleClick(3)}>
+            <IconDiv onClick={() => handleClick(4)}>
                 <Link to={'/setting'}>
-                    {select === 3?
+                    {select === 4?
                         (<FillSetting/>):
                         (<LineSetting/>)
                     }

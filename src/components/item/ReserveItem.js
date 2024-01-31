@@ -118,7 +118,6 @@ const TextContents=styled.div`
     padding-bottom: 8px;
 `
 const DateContents=styled.div`
-    height: 40%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;

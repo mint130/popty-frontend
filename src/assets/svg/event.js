@@ -1,6 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import * as icons from './index';
+const Restaurant = icons["restaurant"];
+const FlowerShop = icons["flowerShop"];
+const BookStore = icons["bookStore"];
+
 const EventComponent = props => (
+
     <Svg xmlns="http://www.w3.org/2000/svg" width="118" height="148" viewBox="0 0 118 148" fill="#CECECE">
 
         <g filter="url(#filter0_d_1283_12838)">
@@ -19,6 +25,16 @@ const EventComponent = props => (
                 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1283_12838" result="shape"/>
             </filter>
         </defs>
+        <svg  x="8" y="5">
+            {(props.id===0) ? null
+            :(props.id===1)? <Restaurant/>
+            :(props.id===2)? null
+            :(props.id===3)? <FlowerShop/>
+            :(props.id===4)? null
+            :(props.id===5)?<BookStore/>
+            :null}
+        </svg>
+
         <text font-family="SUIT Variable" font-weight="600" font-size="16px" text-anchor="middle" alignment-baseline="middle" transform="translate(59,120)" fill="black">
             {props.name}
         </text>

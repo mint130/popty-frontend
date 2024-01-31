@@ -4,7 +4,11 @@ const Reservation = () => {
 
     return (
         <Div>
+            <ReservationMenu>
+                대관현황/채팅
+            </ReservationMenu>
             <Container>
+
                 <ReserveList/>
             </Container>
         </Div>
@@ -17,6 +21,10 @@ const Container=styled.div`
     max-width: 100%;
     min-height: inherit;
     padding: 5%;
+`
+const ReservationMenu=styled.div`
+
+
 `
 const Div=styled.div`
     min-height: 100vh;
