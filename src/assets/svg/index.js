@@ -9,6 +9,9 @@ export {ReactComponent as lineSetting} from './navbar/setting-line.svg';
 export {ReactComponent as lineBoard} from './navbar/board-line.svg';
 export {ReactComponent as fillBoard} from './navbar/board-fill.svg';
 
+export {ReactComponent as cafe} from './main/cafeblur.svg';
+export {ReactComponent as photo} from './main/photoblur.svg';
 export {ReactComponent as bookStore} from './main/bookstoreblur.svg';
 export {ReactComponent as flowerShop} from './main/flowershopblur.svg';
 export {ReactComponent as restaurant} from './main/restaurantblur.svg';
+export {ReactComponent as movieScreen} from './main/movieblur.svg';

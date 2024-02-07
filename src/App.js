@@ -7,7 +7,8 @@ import Home from "./pages/Home";
 import Reservation from "./pages/Reservation";
 import Board from "./pages/Board";
 import Setting from "./pages/Setting";
-import EventPlaceList from "./pages/EventPlaceList";
+import EventPlaceList from "./pages/EventPlace/EventPlaceList";
+import AddEventPlace from "./pages/EventPlace/AddEventPlace";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/board" element={<Board/>}></Route>
             <Route path="/setting" element={<Setting/>}></Route>
             <Route path="/list" element={<EventPlaceList/>}></Route>
+            <Route path="/list/add" element={<AddEventPlace/>}></Route>
         </Routes>
         <Navbar />
 

@@ -1,11 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 import * as icons from './index';
+
 const Restaurant = icons["restaurant"];
 const FlowerShop = icons["flowerShop"];
 const BookStore = icons["bookStore"];
+const MovieScreen = icons["movieScreen"];
+const Photo = icons["photo"];
+const Cafe = icons["cafe"];
 
 const EventComponent = props => (
+
 
     <Svg xmlns="http://www.w3.org/2000/svg" width="118" height="148" viewBox="0 0 118 148" fill="#CECECE">
 
@@ -26,11 +31,11 @@ const EventComponent = props => (
             </filter>
         </defs>
         <svg  x="8" y="5">
-            {(props.id===0) ? null
+            {(props.id===0) ? <Cafe/>
             :(props.id===1)? <Restaurant/>
-            :(props.id===2)? null
+            :(props.id===2)? <Photo/>
             :(props.id===3)? <FlowerShop/>
-            :(props.id===4)? null
+            :(props.id===4)? <MovieScreen/>
             :(props.id===5)?<BookStore/>
             :null}
         </svg>
